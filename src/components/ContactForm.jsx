@@ -36,7 +36,7 @@ const ContactForm = () => {
         method="POST"
         target="_blank"
         action="https://formsubmit.co/75435e97eb423dc7ba50e031f2b4362f"
-        className={cn("grid grid-cols-6 gap-4")}>
+        className={cn("grid grid-cols-6 gap-2")}>
           <Input
             label="Name"
             name="name"
