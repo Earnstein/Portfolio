@@ -43,7 +43,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
       {/* main section*/}
-      <div className="z-30 basis-2/5 mt-24 md:mt-32">
+      <div className="z-30 basis-2/5 mt-16 md:mt-32">
         {/*headings*/}
         <motion.div
           initial="hidden"
@@ -65,7 +65,7 @@ const Landing = ({ setSelectedPage }) => {
               Bakare
             </span>
           </h1>
-          <p className="sm:text-xl mt-4 sm:mt-12 mb-4 md:mt-6 text-center md:text-start font-montserrat">
+          <p className="sm:text-xl mt-4 sm:mt-12 mb-4 md:mt-6 text-center md:text-start font-playfair">
            A Full Stack Developer.
           </p>
         </motion.div>
@@ -95,12 +95,12 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div
+            <button
               className="bg-deep-blue hover:text-red transition
            duration-500 max-[320px]:px-6 w-full h-full flex items-center justify-center font-playfair px-10"
             >
               Let&apos;s talk.
-            </div>
+            </button>
           </AnchorLink>
         </motion.div>
 

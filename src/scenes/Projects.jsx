@@ -18,7 +18,10 @@ const projectVariants = {
 
 const Project = ({ title, image }) => {
   return (
-    <motion.div variants={projectVariants} className="relative mb-1 sm:mb-0 ">
+    <motion.div
+      viewport={{ once: false, amount: 0.5 }} 
+      variants={projectVariants} 
+      className="relative mb-1 sm:mb-0 ">
       <div
         className="absolute inset-0 h-full w-full opacity-0
              hover:opacity-90 transition-all duration-500 ease-linear bg-grey
@@ -42,7 +45,7 @@ const Projects = () => {
         className="md:w-1/2 mx-auto"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -57,10 +60,10 @@ const Projects = () => {
             my <span className="text-red"> pro</span>jects
           </h2>
           <LineGradient
-            width="w-4/5 md:w-1/3"
+            width="w-3/4"
             styles="transition-all duration-500 hover:w-[40%]"
           />
-          <p className="text-center max-w-xl font-montserrat text-sm sm:text-xl">
+          <p className="text-center max-w-xl font-playfair text-sm sm:text-xl">
             Uncover some of my most exciting projects.
           </p>
         </div>
@@ -71,7 +74,7 @@ const Projects = () => {
           className="sm:grid md:grid-cols-3 sm:grid-cols-2 py-10 px-24 gap-1"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={container}
         >
