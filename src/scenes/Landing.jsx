@@ -1,13 +1,11 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { myImg } from "../assets/images";
-import { useState } from "react";
 import SocialMediaIcon from "../components/SocialMediaIcon";
+import Animation from "../components/Animation";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-  const [isImageHover, setIsImageHover] = useState(false);
 
   return (
     <section
@@ -15,35 +13,17 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center md:min-h-screen py-10 container mx-auto"
     >
       {/* IMAGE SECTION */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32 group">
+      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-8 group">
         {isAboveMediumScreens ? (
-          <div
-            className={`relative z-0 sm:ml-20 ml-0 before:absolute before:mt-4 before:-top-20 before:-left-20  before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1] ${
-              isImageHover
-                ? "before:hover:border-red before:transition before:duration-500"
-                : ""
-            }`}
-            onMouseEnter={() => setIsImageHover(true)}
-            onMouseLeave={() => setIsImageHover(false)}
-          >
-            <img
-              className="hover:filter hover:saturate-200 transition duration-500 z-10
-              max-w-sm "
-              src={myImg}
-              alt="profile"
-            />
+          <div>
+            <Animation />
           </div>
         ) : (
-          <img
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-              max-w-sm mt-10"
-            src={myImg}
-            alt="profile"
-          />
+          <Animation />
         )}
       </div>
       {/* main section*/}
-      <div className="z-30 basis-2/5 mt-16 md:mt-32">
+      <div className="z-30 basis-2/5 mt-4">
         {/*headings*/}
         <motion.div
           initial="hidden"
@@ -56,7 +36,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair z-10 text-center md:text-start">
-           I&apos;m Damilola {""}
+            I&apos;m Damilola {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20
                 xs:before:content-brush before:absolute before:-left-[40px] before:mt-6 before:-top-[150px]
@@ -66,7 +46,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </h1>
           <p className="sm:text-xl mt-4 sm:mt-12 mb-4 md:mt-6 text-center md:text-start font-playfair">
-           A Full Stack Developer.
+            A Full Stack Developer.
           </p>
         </motion.div>
 
