@@ -66,6 +66,8 @@ const ContactForm = () => {
           onBlur={handleBlur}
          />
           {touched.message && <div className="col-span-6 text-red text-sm font-palanquin">{errors.message}</div>}
+          <button 
+          className="bg-red px-4 py-2" type="submit">Done</button>
         </form>
         
       )}

@@ -32,9 +32,8 @@ const MySkills = () => {
           <LineGradient
             width="w-1/3"
           />
-          <p className="mt-4 max-w-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-            eum ratione vel, architecto perspiciatis voluptatibus?
+          <p className="mt-4 max-w-sm font-montserrat">
+          I&apos;m a seasoned developer with exprience in python and javascript. Expertise in frameworks like react, django, fastAPI, and Node.js.
           </p>
         </motion.div>
 
@@ -78,21 +77,20 @@ const MySkills = () => {
           }}
         >
           <div className="relative z-10">
-            <h2 className="title">01</h2>
+            <h2 className="title ">01</h2>
             <p
               className="font-semibold
                     font-playfair text-3xl mt-4"
             >
-              Experience
+              Python
             </p>
             <div
               className="w-1/2 md:w-3/4 h-32 bg-blue
-                absolute right-0 top-0 z-[-1]"
+                absolute right-4 top-0 z-[-1]"
             />
 
-            <p className="max-w-sm mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              consequuntur voluptate, animi reiciendis ad dignissimos?
+            <p className="max-w-sm mt-4 font-montserrat">
+            Python is my go-to language, and I&apos;ve mastered frameworks like Django, FastAPI, and Flask to build robust web applications.
             </p>
           </div>
         </motion.div>
@@ -115,15 +113,14 @@ const MySkills = () => {
               className="font-semibold
                     font-playfair text-3xl mt-4"
             >
-              Experience
+              Javascript
             </p>
             <div
               className="w-1/2 md:w-3/4 h-32 bg-yellow
                 absolute right-0 top-0 z-[-1]"
             />
-            <p className="max-w-sm mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              consequuntur voluptate, animi reiciendis ad dignissimos?
+            <p className="max-w-sm mt-4 font-montserrat">
+            My JavaScript expertise spans React, Express, and Node.js, enabling me to create dynamic and responsive user experiences
             </p>
           </div>
         </motion.div>
@@ -146,16 +143,15 @@ const MySkills = () => {
               className="font-semibold
                     font-playfair text-3xl mt-4"
             >
-              Experience
+              Databases
             </p>
             <div
               className="w-1/2 md:w-3/4 h-32 bg-red
                 absolute right-0 top-0 z-[-1]"
             />
 
-            <p className="max-w-sm mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              consequuntur voluptate, animi reiciendis ad dignissimos?
+            <p className="max-w-sm mt-4 font-montserrat">
+            I&apos;m proficient in both SQL and NoSQL databases, ensuring scalable solutions for different project needs
             </p>
           </div>
         </motion.div>

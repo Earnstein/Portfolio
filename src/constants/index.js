@@ -16,8 +16,13 @@ export  const navLinks = [
 
 
 export const projects = [
-  { title: "Project 1", image: project1},
-  { title: "Project 2", image: project2},
-  { title: "Project 3",image: project3},
-  { title: "Project 4", image:project4},
+  { title: "Earneats", image: project1},
+  { title: "Naomi", image: project2},
+  { title: "Zestpay",image: project3},
+  { title: "e-GPT", image:project4},
+  // { title: "Zestpay", image: project3, description: "A fintech application created with django"},
+  // { title: "Hoobank", image:project4, description: "Mordern bank app web interface with react"},
+  // { title: "Naomi", image: project1, description: "A virtual assistance created with react openAI and fastAPI "},
+  // { title: "Earneats", image: project2, description: "Online food market made with django"},
+  // { title: "Socialpedia", image: project3, description: "A mordern social media platform"},
 ];

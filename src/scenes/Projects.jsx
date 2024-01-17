@@ -18,7 +18,7 @@ const projectVariants = {
 
 const Project = ({ title, image }) => {
   return (
-    <motion.div variants={projectVariants} className="relative mb-1 sm:mb-0">
+    <motion.div variants={projectVariants} className="relative mb-1 sm:mb-0 ">
       <div
         className="absolute inset-0 h-full w-full opacity-0
              hover:opacity-90 transition-all duration-500 ease-linear bg-grey
@@ -28,7 +28,7 @@ const Project = ({ title, image }) => {
       >
         <h2 className="title text-black font-playfair"> {title}</h2>
         <p className="mt-2 text-black  text-center">
-          Lorem ipsum dolor sit amet consectetu
+          stack - React, tailwind, express , mongodb
         </p>
       </div>
       <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -60,9 +60,8 @@ const Projects = () => {
             width="w-4/5 md:w-1/3"
             styles="transition-all duration-500 hover:w-[40%]"
           />
-          <p className="text-center max-w-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-            eum ratione vel, architecto perspiciatis voluptatibus?
+          <p className="text-center max-w-xl font-montserrat text-sm sm:text-xl">
+            Uncover some of my most exciting projects.
           </p>
         </div>
       </motion.div>

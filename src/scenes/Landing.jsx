@@ -65,8 +65,8 @@ const Landing = ({ setSelectedPage }) => {
               Bakare
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl mt-4 mb-8 text-center md:text-start font-montserrat">
-            Full Stack <span className="text-gradient-rainblue">Developer</span>
+          <p className="text-xl mt-6 mb-8 text-center md:text-start font-montserrat">
+           A Full Stack Developer
           </p>
         </motion.div>
 
