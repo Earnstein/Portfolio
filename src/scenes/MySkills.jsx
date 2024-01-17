@@ -120,7 +120,7 @@ const MySkills = () => {
                 absolute right-0 top-0 z-[-1]"
             />
             <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
-            My JavaScript expertise spans React, Express, and Node.js, enabling me to create dynamic and responsive user experiences
+            My JavaScript expertise spans React, Express, and Node.js, enabling me to create dynamic and responsive user experiences.
             </p>
           </div>
         </motion.div>
@@ -151,7 +151,7 @@ const MySkills = () => {
             />
 
             <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
-            I&apos;m proficient in both SQL and NoSQL databases, ensuring scalable solutions for different project needs
+            I&apos;m proficient in both SQL and NoSQL databases, ensuring scalable solutions for different project needs.
             </p>
           </div>
         </motion.div>
