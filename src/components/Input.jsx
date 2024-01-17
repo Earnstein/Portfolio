@@ -30,7 +30,7 @@ const Input = ({
           onBlur={onBlur}
           required
         />
-      {error && <div className="col-span-6 text-red font-palanquintext-red-500 text-sm mt-1">{error}</div>}
+      {error && <div className="col-span-6 text-red font-palanquin text-sm mt-1">{error}</div>}
     </div>
   );
 };
