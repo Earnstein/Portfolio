@@ -15,15 +15,35 @@ const Landing = ({ setSelectedPage }) => {
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-8 group">
         {isAboveMediumScreens ? (
-          <div>
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          >
             <Animation />
-          </div>
+          </motion.div>
         ) : (
-          <Animation />
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}>
+            <Animation />
+          </motion.div>
+          
         )}
       </div>
       {/* main section*/}
-      <div className="z-30 basis-2/5 mt-4">
+      <div className="z-30 basis-2/5 mt-0 md:mt-4">
         {/*headings*/}
         <motion.div
           initial="hidden"
