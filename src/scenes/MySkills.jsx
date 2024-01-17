@@ -6,7 +6,7 @@ import { skillsImg } from "../assets/images";
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-8 sm:pt-32 pb-24">
+    <section id="skills" className="sm:pt-24 sm:pb-24 py-8">
       {/* HEADER AND IMAGE SECTION */}
       <div
         className="md:flex md:justify-between md:flex-row-reverse md:gap-16
@@ -89,7 +89,7 @@ const MySkills = () => {
                 absolute right-4 top-0 z-[-1]"
             />
 
-            <p className="max-w-sm mt-4 font-montserrat">
+            <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
             Python is my go-to language, and I&apos;ve mastered frameworks like Django, FastAPI, and Flask to build robust web applications.
             </p>
           </div>
@@ -119,7 +119,7 @@ const MySkills = () => {
               className="w-1/2 md:w-3/4 h-32 bg-yellow
                 absolute right-0 top-0 z-[-1]"
             />
-            <p className="max-w-sm mt-4 font-montserrat">
+            <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
             My JavaScript expertise spans React, Express, and Node.js, enabling me to create dynamic and responsive user experiences
             </p>
           </div>
@@ -150,7 +150,7 @@ const MySkills = () => {
                 absolute right-0 top-0 z-[-1]"
             />
 
-            <p className="max-w-sm mt-4 font-montserrat">
+            <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
             I&apos;m proficient in both SQL and NoSQL databases, ensuring scalable solutions for different project needs
             </p>
           </div>

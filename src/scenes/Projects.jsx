@@ -37,7 +37,7 @@ const Project = ({ title, image }) => {
 };
 const Projects = () => {
   return (
-    <section id="projects" className="pt-28 pb-24">
+    <section id="projects" className="sm:py-32 py-8">
       <motion.div
         className="md:w-1/2 mx-auto"
         initial="hidden"
