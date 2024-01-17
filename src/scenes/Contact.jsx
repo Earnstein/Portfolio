@@ -50,12 +50,12 @@ const Contact = () => {
           >
             <p
               className="title
-                mb-4 uppercase"
+                mb-2 uppercase"
             >
               Contact <span className="text-red"> me</span>
             </p>
             <LineGradient width="w-1/2" />
-            <div className="mt-8">
+            <div className="mt-4">
               <ContactForm />
             </div>
           </motion.div>

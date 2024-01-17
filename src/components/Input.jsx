@@ -18,7 +18,7 @@ const Input = ({
       </label>
       <input
           className={cn(
-            " w-full bg-blue font-semibold placeholder-white-400 p-2 sm:p-4 placeholder:font-palanquin outline-none rounded-md",
+            " w-full bg-blue font-semibold placeholder-white-400 placeholder-white px-4 py-2 sm:px-6 sm:py-4 placeholder:font-palanquin outline-none rounded-md font-palanquin",
             error && "border-red-500"
           )}
           id={name}

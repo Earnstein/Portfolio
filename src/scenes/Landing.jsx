@@ -55,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <h1 className="text-4xl md:text-5xl font-playfair z-10 text-center md:text-start">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair z-10 text-center md:text-start">
            I&apos;m Damilola {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20
@@ -65,8 +65,8 @@ const Landing = ({ setSelectedPage }) => {
               Bakare
             </span>
           </h1>
-          <p className="text-xl mt-6 mb-8 text-center md:text-start font-montserrat">
-           A Full Stack Developer
+          <p className="sm:text-xl mt-4 sm:mt-12 mb-4 md:mt-6 text-center md:text-start font-montserrat">
+           A Full Stack Developer.
           </p>
         </motion.div>
 

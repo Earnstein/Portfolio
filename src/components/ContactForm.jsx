@@ -5,7 +5,7 @@ import Input from "./Input";
 
 const loginSchema = yup.object().shape({
   name: yup.string().required("Required"),
-  email: yup.string().email("Invalid email").required("Required"),
+  email: yup.string().email("Invalid email").required("Don't forget your email"),
   message : yup.string().required("Don't forget your message")
 });
 
@@ -56,9 +56,9 @@ const ContactForm = () => {
           />
 
           <textarea 
-          className="col-span-6 bg-blue font-semibold placeholder-white-400 p-3 rounded-md outline-none"
+          className="col-span-6 bg-blue font-semibold placeholder-white px-6 py-2 rounded-md outline-none font-palanquin placeholder:font-palanquin"
           name="message"
-          placeholder="MESSAGE"
+          placeholder="Your message?"
           rows="5"
           cols="10"
           value={values.message}
@@ -67,7 +67,8 @@ const ContactForm = () => {
          />
           {touched.message && <div className="col-span-6 text-red text-sm font-palanquin">{errors.message}</div>}
           <button 
-          className="bg-red px-4 py-2" type="submit">Done</button>
+          className={cn("bg-red px-24 col-span-6 font-palanquin py-3 sm:py-4 rounded-md",
+          touched.message && errors.message  && "border-red-500")} type="submit">Send message</button>
         </form>
         
       )}
