@@ -72,7 +72,7 @@ const ContactForm = () => {
             type="submit"
           >
             <span
-              className="bg-deep-blue hover:text-red transition
+              className="bg-deep-blue hover:text-yellow transition
            duration-500 flex items-center justify-center font-playfair py-2 sm:py-3"
             >
               Send message.
