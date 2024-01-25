@@ -30,7 +30,7 @@ const Project = ({ title, image, stack, description, link }) => {
              font-palanquin
              "
       >
-        <div className="space-y-1 md:space-y-2">
+        <div className="space-y-2">
           <h2 className="title text-black font-playfair"> {title}</h2>
           <p className="mt-2 text-black text-center">
             {stack} - {description}

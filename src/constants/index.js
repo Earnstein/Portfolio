@@ -15,7 +15,7 @@ export  const navLinks = [
 
 
 export const projects = [
+  { title: "Naomi", image: project2, stack: "React, FastAPI", description : "AI Vioce assitance", link: "https://github.com/Earnstein/react-projects/tree/main/eAI"},
   { title: "eShop", image: project1, stack: "MERN", description : "e-commerce store", link: "https://github.com/Earnstein/react-projects/tree/version-3/eShop"},
   { title: "Earneats",image: project3,stack: "Django", description : "Online food marketplace", link: "https://github.com/Earnstein/python-fiesta/tree/master/earneats"},
-  { title: "Naomi", image: project2, stack: "React, FastAPI", description : "AI Vioce assitance", link: "https://github.com/Earnstein/react-projects/tree/main/eAI"},
 ];
