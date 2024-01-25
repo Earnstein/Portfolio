@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, twitter, project1, project2, project3, project4 } from "../assets/images";
+import { facebook, instagram, linkedin, twitter, project1, project2, project3, project4, project5, project6, project7 } from "../assets/images";
 
 export  const navLinks = [
     { page: "Home", href: "Home" },
@@ -16,13 +16,7 @@ export  const navLinks = [
 
 
 export const projects = [
-  { title: "Earneats", image: project1},
-  { title: "Naomi", image: project2},
-  { title: "Zestpay",image: project3},
-  { title: "e-GPT", image:project4},
-  // { title: "Zestpay", image: project3, description: "A fintech application created with django"},
-  // { title: "Hoobank", image:project4, description: "Mordern bank app web interface with react"},
-  // { title: "Naomi", image: project1, description: "A virtual assistance created with react openAI and fastAPI "},
-  // { title: "Earneats", image: project2, description: "Online food market made with django"},
-  // { title: "Socialpedia", image: project3, description: "A mordern social media platform"},
+  { title: "Earneats", image: project5},
+  { title: "Naomi", image: project6},
+  { title: "Zestpay",image: project7}
 ];

@@ -10,13 +10,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navBarBg = isTopOfPage ? "" : "bg-red";
 
   return (
-    <header>
-      <nav className={` ${navBarBg} z-40 w-full fixed top-0 py-6`}>
-        <div className="flex items-center justify-between mx-auto w-5/6">
+    <header className="max-container">
+      <nav className={` ${navBarBg} z-40 w-full fixed top-0 right-0 py-4`}>
+        <div className="flex items-center justify-between max-container">
           <h4 className="font-playfair text-3xl sm:text-4xl font-bold">DB</h4>
           {/* Desktop nav*/}
           {isAboveSmallScreens ? (
-            <div className="flex justify-between gap-8 font-opensans text-sm font-semibold relative ">
+            <div className="flex justify-between gap-8 font-opensans text-sm font-semibold relative">
               {navLinks.map((link) => (
                 <Link
                   isTopOfPage={isTopOfPage}

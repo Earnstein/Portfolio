@@ -1,9 +1,10 @@
 import { socialMedia } from "../constants"
 
-const SocialMediaIcon = () => {
+const SocialMediaIcon = ({className}) => {
+  const style = className || "mt-10"
   return (
-    <div className="flex justify-center md:justify-start my-10
-    gap-8">
+    <div className={`flex justify-center md:justify-start
+    gap-8 ${style}`}>
 
         {socialMedia.map((link) => (
             <a

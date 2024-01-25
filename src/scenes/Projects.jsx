@@ -19,9 +19,10 @@ const projectVariants = {
 const Project = ({ title, image }) => {
   return (
     <motion.div
-      viewport={{ once: false, amount: 0.5 }} 
-      variants={projectVariants} 
-      className="relative mb-1 sm:mb-0 ">
+      viewport={{ once: true, amount: 0.5 }}
+      variants={projectVariants}
+      className="relative mb-1 sm:mb-0 "
+    >
       <div
         className="absolute inset-0 h-full w-full opacity-0
              hover:opacity-90 transition-all duration-500 ease-linear bg-grey
@@ -40,12 +41,12 @@ const Project = ({ title, image }) => {
 };
 const Projects = () => {
   return (
-    <section id="projects" className="sm:py-32 py-8">
+    <section id="projects" className="sm:py-28 py-8 space-y-8">
       <motion.div
         className="md:w-1/2 mx-auto"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -69,33 +70,19 @@ const Projects = () => {
         </div>
       </motion.div>
       {/*PROJECTS*/}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mx-auto max-w-5xl">
         <motion.div
-          className="sm:grid md:grid-cols-3 sm:grid-cols-2 py-10 px-24 gap-1"
+          className="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-1"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          <motion.div
-            variants={projectVariants}
-            className="flex justify-center items-center text-center p-5
-             bg-red hover:bg-blue max-w-sm text-sm sm:text-2xl font-semibold font-playfair mb-2 sm:mb-0 transition-all duration-500 ease-linear "
-          >
-            BEAUTIFUL USER INTERFACES
-          </motion.div>
           {/*PROJECTS*/}
           {projects.map((p) => (
             <Project key={p.title} title={p.title} image={p.image} />
           ))}
-          <motion.div
-            variants={projectVariants}
-            className="flex justify-center items-center text-center p-5
-             bg-blue hover:bg-red max-w-sm  text-sm  sm:text-2xl font-semibold font-playfair mb-2 sm:mb-0 transition-all duration-500 ease-linear"
-          >
-            BEAUTIFUL USER INTERFACES
-          </motion.div>
         </motion.div>
       </div>
     </section>

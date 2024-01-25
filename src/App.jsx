@@ -3,6 +3,7 @@ import LineGradient from "./components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Contact from "./scenes/Contact";
 import DotGroup from "./scenes/DotGroup";
+import Footer from "./scenes/Footer";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Navbar from "./scenes/Navbar";
@@ -60,6 +61,9 @@ const App = () => {
       <div className="max-container md:h-screen">
             <Contact/>
       </div>
+      <section>
+      <Footer/>
+      </section>
     </main>
   )
 };
