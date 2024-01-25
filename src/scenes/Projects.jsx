@@ -21,7 +21,7 @@ const Project = ({ title, image, stack, description, link }) => {
     <motion.div
       viewport={{ once: true, amount: 0.5 }}
       variants={projectVariants}
-      className="relative mb-1 sm:mb-0 "
+      className="relative mb-1 sm:mb-0"
     >
       <div
         className="absolute inset-0 h-full w-full opacity-0
@@ -30,15 +30,19 @@ const Project = ({ title, image, stack, description, link }) => {
              font-palanquin
              "
       >
-        <div className="space-y-2">
-        <h2 className="title text-black font-playfair"> {title}</h2>
-        <p className="mt-2 text-black  text-center">
-          {description}
-        </p>
-        <p className="mt-2 text-black  text-center">
-          {stack}
-        </p>
-        <a className="inline-block rounded-full bg-blue px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400" href={link} target="_blank" rel="noopener noreferrer">Check it out</a>
+        <div className="space-y-1 md:space-y-2">
+          <h2 className="title text-black font-playfair"> {title}</h2>
+          <p className="mt-2 text-black text-center">
+            {stack} - {description}
+          </p>
+          <a
+            className="inline-block rounded-full bg-blue px-10 py-2 md:px-12 md:py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Check it out
+          </a>
         </div>
       </div>
       <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -47,7 +51,7 @@ const Project = ({ title, image, stack, description, link }) => {
 };
 const Projects = () => {
   return (
-    <section id="projects"className="sm:py-24 py-20 space-y-8">
+    <section id="projects" className="sm:py-24 py-20 space-y-8">
       <motion.div
         className="md:w-1/2 mx-auto"
         initial="hidden"
