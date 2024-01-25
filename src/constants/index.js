@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, twitter, project1, project2, project3, project4, project5, project6, project7 } from "../assets/images";
+import {  linkedin, twitter, github, project1, project2, project3 } from "../assets/images";
 
 export  const navLinks = [
     { page: "Home", href: "Home" },
@@ -8,15 +8,14 @@ export  const navLinks = [
   ];
 
   export const socialMedia = [
-    { src: facebook, href:"https://www.facebook.com/einstein.damilola", alt: "facebook logo" },
     { src: twitter, href:"https://twitter.com/b_dammylolah", alt: "twitter logo" },
-    { src: instagram, href:"https://instagram.com/earn_stein?igshid=MzNlNGNkZWQ4Mg==", alt: "instagram logo" },
+   { src: github, href:"https://github.com/Earnstein", alt: "github logo" },
     { src: linkedin, href:"https://www.linkedin.com/in/damilola-bakare-63890421b",alt: "linkedin logo" },
 ];
 
 
 export const projects = [
-  { title: "Earneats", image: project5},
-  { title: "Naomi", image: project6},
-  { title: "Zestpay",image: project7}
+  { title: "eShop", image: project1, stack: "Mongodb, Express, React, Node", description : "e-commerce store", link: "https://github.com/Earnstein/react-projects/tree/version-3/eShop"},
+  { title: "Earneats",image: project3,stack: "Django", description : "Online food marketplace", link: "https://github.com/Earnstein/python-fiesta/tree/master/earneats"},
+  { title: "Naomi", image: project2, stack: "React, FastAPI", description : "AI Vioce assitance", link: "https://github.com/Earnstein/react-projects/tree/main/eAI"},
 ];

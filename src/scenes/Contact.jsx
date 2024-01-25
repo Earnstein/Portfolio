@@ -8,7 +8,7 @@ const Contact = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id="contact" className="md:flex md:gap-4 md:py-40 py-8">
+    <section id="contact" className="md:flex md:gap-4 md:py-40 py-16">
       {/* Image Section */}
       <div className="mt-8 md:order-1 md:mt-0">
         {isAboveMediumScreens ? (

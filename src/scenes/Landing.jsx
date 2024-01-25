@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:min-h-screen py-10 container mx-auto"
+      className="md:flex md:justify-between md:items-center md:min-h-screen py-20 sm:py-10 container mx-auto"
     >
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-8 group">

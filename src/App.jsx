@@ -62,7 +62,6 @@ const App = () => {
             <Contact/>
       </div>
       <section>
-      <Footer/>
       </section>
     </main>
   )

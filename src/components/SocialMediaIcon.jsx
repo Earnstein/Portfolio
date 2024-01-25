@@ -8,7 +8,7 @@ const SocialMediaIcon = ({className}) => {
 
         {socialMedia.map((link) => (
             <a
-            className="hover:opacity-50 transition duration-500"
+            className="hover:opacity-50 transition duration-500 flex justify-center items-center"
             key={link.alt} 
             href={link.href}
             target="_blank"

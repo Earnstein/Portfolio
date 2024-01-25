@@ -16,7 +16,7 @@ const projectVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
 };
 
-const Project = ({ title, image }) => {
+const Project = ({ title, image, stack, description, link }) => {
   return (
     <motion.div
       viewport={{ once: true, amount: 0.5 }}
@@ -30,10 +30,16 @@ const Project = ({ title, image }) => {
              font-palanquin
              "
       >
+        <div className="space-y-2">
         <h2 className="title text-black font-playfair"> {title}</h2>
         <p className="mt-2 text-black  text-center">
-          stack - React, tailwind, express , mongodb
+          {description}
         </p>
+        <p className="mt-2 text-black  text-center">
+          {stack}
+        </p>
+        <a className="inline-block rounded-full bg-blue px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400" href={link} target="_blank" rel="noopener noreferrer">Check it out</a>
+        </div>
       </div>
       <img src={image} alt={title} className="w-full h-full object-cover" />
     </motion.div>
@@ -41,7 +47,7 @@ const Project = ({ title, image }) => {
 };
 const Projects = () => {
   return (
-    <section id="projects" className="sm:py-28 py-8 space-y-8">
+    <section id="projects"className="sm:py-24 py-20 space-y-8">
       <motion.div
         className="md:w-1/2 mx-auto"
         initial="hidden"
@@ -62,7 +68,7 @@ const Projects = () => {
           </h2>
           <LineGradient
             width="w-3/4"
-            styles="transition-all duration-500 hover:w-[40%]"
+            styles="transition-all duration-500 hover:w-2/5"
           />
           <p className="text-center max-w-xl font-playfair text-sm sm:text-xl">
             Uncover some of my most exciting projects.
@@ -81,7 +87,7 @@ const Projects = () => {
         >
           {/*PROJECTS*/}
           {projects.map((p) => (
-            <Project key={p.title} title={p.title} image={p.image} />
+            <Project key={p.title} {...p} />
           ))}
         </motion.div>
       </div>
