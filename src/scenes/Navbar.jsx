@@ -40,7 +40,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           {!isAboveSmallScreens && isMenuToggled && (
            <>
            <div
-            className="fixed top-0 right-0 w-full h-full bg-black/90  flex justify-center"
+            className="fixed top-0 right-0 w-full h-full bg-black/90 flex justify-center"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
              <div className="bg-slate-800 h-4/5 w-[90%] z-50 mt-16">
