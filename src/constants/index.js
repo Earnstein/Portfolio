@@ -8,8 +8,8 @@ export  const navLinks = [
   ];
 
   export const socialMedia = [
+    { src: github, href:"https://github.com/Earnstein", alt: "github logo" },
     { src: twitter, href:"https://twitter.com/b_dammylolah", alt: "twitter logo" },
-   { src: github, href:"https://github.com/Earnstein", alt: "github logo" },
     { src: linkedin, href:"https://www.linkedin.com/in/damilola-bakare-63890421b",alt: "linkedin logo" },
 ];
 
