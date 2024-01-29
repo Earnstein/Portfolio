@@ -31,7 +31,7 @@ const Project = ({ title, image, stack, description, link }) => {
              "
       >
         <div className="space-y-2">
-          <h2 className="title text-black font-playfair"> {title}</h2>
+          <h2 className="title text-black font-playfair">{title}</h2>
           <p className="mt-2 text-black text-center">
             {stack} - {description}
           </p>
