@@ -7,6 +7,7 @@ import project2 from "./naomi.png";
 import project3 from "./earneats.png";
 import skillsImg from "./skills-image.png";
 import twitter from "./twitter.png";
+import projectify from "./projectify2.png"
 
 export {
     brush,
@@ -17,5 +18,6 @@ export {
     project2,
     project3,
     skillsImg,
-    twitter
+    twitter,
+    projectify
 }
