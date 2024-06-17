@@ -39,10 +39,12 @@ const App = () => {
       </section>
 
       <section className="max-container md:h-full">
-         {isAboveMediumScreens && <DotGroup
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-          />}
+        {isAboveMediumScreens && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )}
         <Landing setSelectedPage={setSelectedPage} />
       </section>
       <LineGradient />
@@ -60,7 +62,10 @@ const App = () => {
         <Contact />
       </div>
       <LineGradient />
-      <Footer />
+
+      <footer className="max-container">
+        <Footer />
+      </footer>
     </main>
   );
 };
