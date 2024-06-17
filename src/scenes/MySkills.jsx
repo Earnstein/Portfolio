@@ -33,7 +33,7 @@ const MySkills = () => {
             width="w-1/3"
           />
           <p className="mt-4 max-w-sm font-montserrat italic">
-          I&apos;m a seasoned developer with exprience in python and javascript. Expertise in frameworks like react, django, fastAPI, and Node.js.
+          I&apos;m a seasoned developer with exprience in Go, python and javascript. Expertise in frameworks like Gin, react, django, fastAPI, and Node.js.
           </p>
         </motion.div>
 
@@ -82,7 +82,7 @@ const MySkills = () => {
               className="font-semibold
                     font-playfair text-3xl mt-4"
             >
-              Python
+              Go
             </p>
             <div
               className="w-1/2 md:w-3/4 h-32 bg-blue
@@ -90,7 +90,7 @@ const MySkills = () => {
             />
 
             <p className="max-w-sm mt-4 sm:mt-6 font-montserrat italic text-sm">
-            Python is my go-to language, and I&apos;ve mastered frameworks like Django, FastAPI, and Flask to build robust web applications.
+            Golang is my go-to language for building server solutions, using its robust standard library or frameworks like Gin for building scalable and efficient web applications.
             </p>
           </div>
         </motion.div>
