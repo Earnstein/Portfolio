@@ -1,5 +1,5 @@
-import {  linkedin, twitter, github, project1, project2, project3, projectify } from "../assets/images";
-
+import {  project1, project2, project3, projectify } from "../assets/images";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";  
 export  const navLinks = [
     { page: "Home", href: "Home" },
     { page: "Skills", href: "Skills" },
@@ -8,9 +8,9 @@ export  const navLinks = [
   ];
 
   export const socialMedia = [
-    { src: github, href:"https://github.com/Earnstein", alt: "github logo" },
-    { src: twitter, href:"https://twitter.com/b_dammylolah", alt: "twitter logo" },
-    { src: linkedin, href:"https://www.linkedin.com/in/damilola-bakare-63890421b",alt: "linkedin logo" },
+    { icon: FaXTwitter, href:"https://twitter.com/b_dammylolah", alt: "twitter logo" },
+    { icon: FaGithub, href:"https://github.com/Earnstein", alt: "github logo" },
+    { icon: FaLinkedin, href:"https://www.linkedin.com/in/damilola-bakare-63890421b",alt: "linkedin logo" },
 ];
 
 
