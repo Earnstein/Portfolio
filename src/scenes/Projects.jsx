@@ -21,7 +21,9 @@ const Project = ({ title, image, stack, description, link }) => {
     <motion.div
       viewport={{ once: true, amount: 0.5 }}
       variants={projectVariants}
-      className="relative mb-1 sm:mb-0"
+      className="relative mb-1 sm:mb-0 h-96 w-96 bg-cover bg-center rounded-sm bg-no-repeat
+      "
+      style={{ backgroundImage: `url(${image})` }}
     >
       <div
         className="absolute inset-0 h-full w-full opacity-0
@@ -45,7 +47,6 @@ const Project = ({ title, image, stack, description, link }) => {
           </a>
         </div>
       </div>
-      <img src={image} alt={title} className="w-full h-full object-cover" />
     </motion.div>
   );
 };
@@ -80,9 +81,9 @@ const Projects = () => {
         </div>
       </motion.div>
       {/*PROJECTS*/}
-      <div className="flex justify-center items-center mx-auto max-w-5xl">
+      <div className="flex justify-center items-center">
         <motion.div
-          className="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-1"
+          className="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
