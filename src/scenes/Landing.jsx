@@ -55,8 +55,11 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+          <h2 className="text-3xl font-playfair z-10 text-center md:text-start">
+            Hi I&apos;m,
+          </h2>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair z-10 text-center md:text-start">
-            I&apos;m Damilola {""}
+           Damilola {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20
                 xs:before:content-brush before:absolute before:-left-[40px] before:mt-6 before:-top-[150px]
@@ -65,8 +68,8 @@ const Landing = ({ setSelectedPage }) => {
               Bakare
             </span>
           </h1>
-          <p className="sm:text-xl mt-4 sm:mt-12 mb-4 md:mt-6 text-center md:text-start font-playfair">
-            A Full Stack Developer.
+          <p className="sm:text-xl mt-4 sm:mt-12 mb-4 text-center md:text-start font-playfair">
+            A Full Stack Developer with a passion for building scalable web applications.
           </p>
         </motion.div>
 
@@ -105,7 +108,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="flex mt-4 justify-center md:justify-start"
+          className="flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
